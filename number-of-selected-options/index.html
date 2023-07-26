@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="selectForm">
+        <p>
+            <label    abel for="musicTypes">Выберите некоторые жанры музыки, а затем нажмите на кнопку ниже:</label>
+            <select id="musicTypes" name="musicTypes" multiple="multiple">
+                <option selected="selected">R&B</option>
+                <option>Jazz</option>
+                <option>Blues</option>
+                <option>New Age</option>
+                <option>Classical</option>
+                <option>Opera</option>
+            </select>
+        </p>
+        <p><input id="btn" type="button" value="Как много выбрано?" /></p>
+        <p class="total"></p>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
