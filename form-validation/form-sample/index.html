@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-lg-5 mx-auto">
+                <form name="myForm" novalidate>
+                    <h2 class="my-4">Форма регистрации пользователя</h2>
+                    <div class="mb-3">
+                        <label for="form-name" class="form-label">Имя<span class="text-danger">*</span></label>
+                        <input type="text" name="name" class="form-control" id="form-name" placeholder="Ваше имя" required minlength="2" maxlength="20" pattern="^[a-zA-Zа-яА-Я ]+$">
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-email" class="form-label">Адрес Email<span class="text-danger">*</span></label>
+                        <input type="email" name="email" class="form-control" id="form-email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-age" class="form-label">Возраст<span class="text-danger">*</span></label>
+                        <input type="number" name="age" class="form-control" id="form-age" placeholder="18" required>
+                    </div>
+                    <div class="mb-3">
+                        <p>Гендер</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="woman">
+                            <label class="form-check-label" for="form-genderF">Женщина</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="man">
+                            <label class="form-check-label" for="form-genderM">Мужчина</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="non-binary">
+                            <label class="form-check-label" for="form-genderN">Небинарная персона</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p>Профессия<span class="text-danger">*</span></p>
+                        <select class="form-select" id="form-occupation" name="occupation" required>
+                            <option value="" disabled selected hidden>Выберите профессию</option>
+                            <option value="doctor">Врач</option>
+                            <option value="programmer">Программист</option>
+                            <option value="teacher">Учитель</option>
+                            <option value="designer">Дизайнер</option>
+                            <option value="engineer">Инженер</option>
+                            <option value="salesPerson">Продавец</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-password" class="form-label">Создайте пароль<span class="text-danger">*</span><br><span class="fw-light fst-italic">Пароль должен содержать как минимум одну заглавную букву, одну строчную букву и одну цифру.</ш></label>
+                        <input type="password" name="password" class="form-control" id="form-password" placeholder="Password1" required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-password2" class="form-label">Повторите пароль<span class="text-danger">*</span></label>
+                        <input type="password" name="passwordRepeat" class="form-control" id="form-password2" placeholder="Password1" required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="consent" id="form-consent" required>
+                        <label class="form-check-label" for="form-consent">Даю согласие на обработку персональных данных<span class="text-danger">*</span></label>
+                    </div>
+                    <button type="submit" class="btn btn-success my-3">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

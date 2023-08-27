@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JS 2.0. Практикум.</title>
+		<link rel="stylesheet" href="./assets/style.css" />
+		<link rel="stylesheet" href="assets/skeleton.css" />
+		<link rel="stylesheet" href="assets/normalize.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h2><a>Практикум</a></h2>
+			<h1>Неделя 16. Формы</h1>
+
+			<section class="formsAll">
+				<div class="form">
+					<h2>Форма 1</h2>
+					<form name="formOne" class="firstForm">
+						<label for="firstName" class="form__label">Имя:</label>
+						<input type="text" id="firstName" name="firstName" class="form__input" />
+						<br />
+
+						<label for="firstEmail" class="form__label">Email:</label>
+						<input type="email" id="firstEmail" name="firstEmail" class="form__input" />
+						<br />
+
+						<label for="firstSelect" class="form__label">Выберите опцию:</label>
+						<select id="firstSelect" name="firstSelect" class="form__select">
+							<option value="Опция 1">Опция 1</option>
+							<option value="Опция 2">Опция 2</option>
+							<option value="Опция 3">Опция 3</option>
+						</select>
+						<br />
+
+						<button type="submit" name="firstButton" class="form__submit">Отправить</button>
+						<p class="error-message" id="errorMessage"></p>
+					</form>
+				</div>
+
+				<div class="form">
+					<h2>Форма 2</h2>
+					<form name="formTwo" class="secondForm">
+						<label for="secondName" class="form__label">Имя:</label>
+						<input type="text" id="secondName" name="secondName" class="form__input" />
+						<br />
+
+						<label for="secondEmail" class="form__label">Email:</label>
+						<input type="email" id="secondEmail" name="secondEmail" class="form__input" />
+						<br />
+
+						<label class="form__label">Выберите варианты:</label>
+
+						<div class="flex">
+							<input type="checkbox" id="checkbox1" name="checkboxOne" class="form__checkbox" />
+							<label for="checkbox1">Вариант 1</label>
+						</div>
+
+						<div class="flex">
+							<input type="checkbox" id="checkbox2" name="checkboxTwo" class="form__checkbox" />
+							<label for="checkbox2">Вариант 2</label>
+						</div>
+
+						<div class="flex">
+							<input type="checkbox" id="checkbox3" name="checkboxThree" class="form__checkbox" />
+							<label for="checkbox3">Вариант 3</label>
+						</div>
+
+						<input name="secondButton" type="submit" value="Отправить" class="form__submit" />
+					</form>
+				</div>
+
+				<div class="form">
+					<h2>Форма 3</h2>
+					<form name="formThree" class="thirdForm">
+						<label for="thirdName" class="form__label">Имя:</label>
+						<input
+							type="text"
+							id="thirdName"
+							name="thirdName"
+							class="form__input"
+							placeholder="Ваше имя" />
+						<br />
+
+						<label for="thirdEmail" class="form__label">Email:</label>
+						<input type="email" id="thirdEmail" name="thirdEmail" class="form__input" />
+						<br />
+
+						<input type="submit" name="thirdButton" value="Отправить" class="form__submit" />
+					</form>
+				</div>
+
+				<div class="form">
+					<h2>Форма 4</h2>
+					<form name="lastForm" class="fourthForm">
+						<label class="form__label">Зарегистрируемся?</label>
+						<input
+							type="radio"
+							name="fourthName"
+							value="Я хочу зарегистрироваться"
+							class="form__input" />
+						<span>Я хочу зарегистрироваться</span>
+						<br />
+
+						<input type="submit" name="fourthButton" value="Отправить" class="form__submit b-13" />
+						<p id="practicum13"></p>
+					</form>
+				</div>
+			</section>
+
+
+			<section>
+				<h4>Задание 4</h4>
+				<p>
+					Найдите все формы на странице и выведите их названия. При нажатии на кнопку выведите
+					названия всех найденных форм, разделённых запятыми.
+				</p>
+				<button class="button-primary b-4">Задание 4</button>
+				<div class="pr"><span id="practicum4"></span></div>
+			</section>
+
+			<section>
+				<h4>Задание 7</h4>
+				<p>
+					Выведите перечисление названий (name) всех элементов второй формы на экран. В задании 6 вы
+					нашли их количество.
+				</p>
+				<button class="button-primary b-7">Задание 7</button>
+				<div class="pr"><span id="practicum7"></span></div>
+			</section>
+
+			<section>
+				<h4>Задание 10</h4>
+				<p>Выведите на экран значение radio кнопки четвёртой формы на странице</p>
+				<button class="button-primary b-10">Задание 10</button>
+				<div class="pr"><span id="practicum10"></span></div>
+			</section>
+
+			<section>
+				<h4>Задание 11</h4>
+				<p>Выведите значения всех опций из первой формы</p>
+				<button class="button-primary b-11">Задание 11</button>
+				<div class="pr"><span id="practicum11"></span></div>
+			</section>
+
+			<section>
+				<h4>Задание 12</h4>
+				<p>Выведите значения атрибутов id всех чекбоксов (количество: 3) из второй формы</p>
+				<button class="button-primary b-12">Задание 12</button>
+				<div class="pr"><span id="practicum12"></span></div>
+			</section>
+
+			<section>
+				<h4>Задание 13</h4>
+				<p>Проверьте была ли выбрана кнопка четвёртой формы</p>
+			</section>
+
+			<section>
+				<h4>Задание 14</h4>
+				<p>Проверьте, какой вариант выбран в первой форме</p>
+				<button class="button-primary b-14">Задание 14</button>
+				<div class="pr"><span id="practicum14"></span></div>
+			</section>
+
+			<section>
+				<h4>Задание 17</h4>
+				<p>Проверьте, заполнены ли все поля первой формы перед отправкой</p>
+				<p>
+					Для проверки работы вашего кода, заполните частично первую формк и нажмит ена кнопку
+					отправить
+				</p>
+			</section>
+
+			<section>
+				<h4>Задание 19</h4>
+				<p>
+					При выборе определенной опции из выпадающего списка первой формы измените цвет фона
+					страницы (Опция 1 - красный цвет; Опция 2 - зелёный цвет; Опция 3 - синий цвет)
+				</p>
+			</section>
+
+			<section>
+				<h4>Задание 20</h4>
+				<p>Добавьте валидацию для поля Email первой формы</p>
+			</section>
+
+			<section>
+				<h4>Задание 21</h4>
+				<p>
+					При отправке второй формы выполняется проверка всех чекбоксов. Если ни один из чекбоксов
+					не выбран, отмените отправку формы и выведите сообщение об ошибке в элементе с id
+					"result21".
+				</p>
+				<button class="button-primary b-21">Задание 21</button>
+				<p class="pr" id="result21"></p>
+			</section>
+
+			<section>
+				<h4>Задание 22</h4>
+				<p>
+					При отправке третьей формы выполняется проверка поля Имя на заполненность. Если поле Имя
+					пустое, отмените отправку формы и выведите сообщение об ошибке в элементе с id "result22".
+				</p>
+				<button class="button-primary b-22">Задание 22</button>
+				<p class="pr" id="result22"></p>
+			</section>
+
+			<section>
+				<h4>Задание 23</h4>
+				<p>
+					При выборе опции "Я хочу зарегистрироваться" в четвёртой форме кнопка должна быть
+					разблокирована. В противном случае, сделайте кнопку отправки формы заблокированной.
+				</p>
+				<button class="button-primary b-23">Задание 23</button>
+				<p class="pr" id="result23"></p>
+			</section>
+
+			<section>
+				<h4>Задание 24</h4>
+				<p>
+					Найдите все поля ввода на странице и установите им атрибут "placeholder" со значением
+					"Введите данные"
+				</p>
+				<button class="button-primary b-24">Задание 24</button>
+			</section>
+
+			<section>
+				<h4>Задание 25</h4>
+				<p>
+					При фокусе на любом поле ввода измените его границу на цвет "#00ff00". При потере фокуса
+					восстановите стандартную границу.
+				</p>
+				<button class="button-primary b-25">Задание 25</button>
+			</section>
+
+			<section>
+				<h4>Задание 29</h4>
+				<p>
+					При заполнении всех полей третьей формы выведите их значения в консоль. Используйте
+					JavaScript без использования объекта FormData.
+				</p>
+			</section>
+
+			<section>
+				<h4>Задание 30</h4>
+				<p>При отправке второй формы выведите значения выбранных вариантов в консоль</p>
+				<p class="pr" id="result30"></p>
+			</section>
+		</div>
+
+		<script src="week-16.js"></script>
+	</body>
+</html>
