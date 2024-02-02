@@ -1,132 +1,197 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>JS 2.0. Практикум.</title>
-		<link rel="stylesheet" href="./assets/style.css" />
-		<link rel="stylesheet" href="assets/skeleton.css" />
-		<link rel="stylesheet" href="assets/normalize.css" />
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS 2.0. Практикум.</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="assets/skeleton.css" />
+    <link rel="stylesheet" href="assets/normalize.css" />
+  </head>
 
-	<body>
-		<div class="container">
-			<h2><a>Практикум</a></h2>
-			<h1>Неделя 16. Формы</h1>
+  <body>
+    <div class="container">
+      <h2><a>Практикум</a></h2>
+      <h1>Неделя 16. Формы</h1>
 
-			<section class="formsAll">
-				<div class="form">
-					<h2>Форма 1</h2>
-					<form name="formOne" class="firstForm">
-						<label for="firstName" class="form__label">Имя:</label>
-						<input type="text" id="firstName" name="firstName" class="form__input" />
-						<br />
+      <section class="formsAll">
+        <div class="form">
+          <h2>Форма 1</h2>
+          <form name="formOne" class="firstForm">
+            <label for="firstName" class="form__label">Имя:</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              class="form__input"
+            />
+            <br />
 
-						<label for="firstEmail" class="form__label">Email:</label>
-						<input type="email" id="firstEmail" name="firstEmail" class="form__input" />
-						<br />
+            <label for="firstEmail" class="form__label">Email:</label>
+            <input
+              type="email"
+              id="firstEmail"
+              name="firstEmail"
+              class="form__input"
+            />
+            <br />
 
-						<label for="firstSelect" class="form__label">Выберите опцию:</label>
-						<select id="firstSelect" name="firstSelect" class="form__select">
-							<option value="Опция 1">Опция 1</option>
-							<option value="Опция 2">Опция 2</option>
-							<option value="Опция 3">Опция 3</option>
-						</select>
-						<br />
+            <label for="firstSelect" class="form__label">Выберите опцию:</label>
+            <select id="firstSelect" name="firstSelect" class="form__select">
+              <option value="Опция 1">Опция 1</option>
+              <option value="Опция 2">Опция 2</option>
+              <option value="Опция 3">Опция 3</option>
+            </select>
+            <br />
 
-						<button type="submit" name="firstButton" class="form__submit">Отправить</button>
-						<p class="error-message" id="errorMessage"></p>
-					</form>
-				</div>
+            <button type="submit" name="firstButton" class="form__submit">
+              Отправить
+            </button>
+            <p class="error-message" id="errorMessage"></p>
+          </form>
+        </div>
 
-				<div class="form">
-					<h2>Форма 2</h2>
-					<form name="formTwo" class="secondForm">
-						<label for="secondName" class="form__label">Имя:</label>
-						<input type="text" id="secondName" name="secondName" class="form__input" />
-						<br />
+        <div class="form">
+          <h2>Форма 2</h2>
+          <form name="formTwo" class="secondForm">
+            <label for="secondName" class="form__label">Имя:</label>
+            <input
+              type="text"
+              id="secondName"
+              name="secondName"
+              class="form__input"
+            />
+            <br />
 
-						<label for="secondEmail" class="form__label">Email:</label>
-						<input type="email" id="secondEmail" name="secondEmail" class="form__input" />
-						<br />
+            <label for="secondEmail" class="form__label">Email:</label>
+            <input
+              type="email"
+              id="secondEmail"
+              name="secondEmail"
+              class="form__input"
+            />
+            <br />
 
-						<label class="form__label">Выберите варианты:</label>
+            <label class="form__label">Выберите варианты:</label>
 
-						<div class="flex">
-							<input type="checkbox" id="checkbox1" name="checkboxOne" class="form__checkbox" />
-							<label for="checkbox1">Вариант 1</label>
-						</div>
+            <div class="flex">
+              <input
+                type="checkbox"
+                id="checkbox1"
+                name="checkboxOne"
+                class="form__checkbox"
+              />
+              <label for="checkbox1">Вариант 1</label>
+            </div>
 
-						<div class="flex">
-							<input type="checkbox" id="checkbox2" name="checkboxTwo" class="form__checkbox" />
-							<label for="checkbox2">Вариант 2</label>
-						</div>
+            <div class="flex">
+              <input
+                type="checkbox"
+                id="checkbox2"
+                name="checkboxTwo"
+                class="form__checkbox"
+              />
+              <label for="checkbox2">Вариант 2</label>
+            </div>
 
-						<div class="flex">
-							<input type="checkbox" id="checkbox3" name="checkboxThree" class="form__checkbox" />
-							<label for="checkbox3">Вариант 3</label>
-						</div>
+            <div class="flex">
+              <input
+                type="checkbox"
+                id="checkbox3"
+                name="checkboxThree"
+                class="form__checkbox"
+              />
+              <label for="checkbox3">Вариант 3</label>
+            </div>
 
-						<input name="secondButton" type="submit" value="Отправить" class="form__submit" />
-					</form>
-				</div>
+            <input
+              name="secondButton"
+              type="submit"
+              value="Отправить"
+              class="form__submit"
+            />
+          </form>
+        </div>
 
-				<div class="form">
-					<h2>Форма 3</h2>
-					<form name="formThree" class="thirdForm">
-						<label for="thirdName" class="form__label">Имя:</label>
-						<input
-							type="text"
-							id="thirdName"
-							name="thirdName"
-							class="form__input"
-							placeholder="Ваше имя" />
-						<br />
+        <div class="form">
+          <h2>Форма 3</h2>
+          <form name="formThree" class="thirdForm">
+            <label for="thirdName" class="form__label">Имя:</label>
+            <input
+              type="text"
+              id="thirdName"
+              name="thirdName"
+              class="form__input"
+              placeholder="Ваше имя"
+            />
+            <br />
 
-						<label for="thirdEmail" class="form__label">Email:</label>
-						<input type="email" id="thirdEmail" name="thirdEmail" class="form__input" />
-						<br />
+            <label for="thirdEmail" class="form__label">Email:</label>
+            <input
+              type="email"
+              id="thirdEmail"
+              name="thirdEmail"
+              class="form__input"
+            />
+            <br />
 
-						<input type="submit" name="thirdButton" value="Отправить" class="form__submit" />
-					</form>
-				</div>
+            <input
+              type="submit"
+              name="thirdButton"
+              value="Отправить"
+              class="form__submit"
+            />
+          </form>
+        </div>
 
-				<div class="form">
-					<h2>Форма 4</h2>
-					<form name="lastForm" class="fourthForm">
-						<label class="form__label">Зарегистрируемся?</label>
-						<input
-							type="radio"
-							name="fourthName"
-							value="Я хочу зарегистрироваться"
-							class="form__input" />
-						<span>Я хочу зарегистрироваться</span>
-						<br />
+        <div class="form">
+          <h2>Форма 4</h2>
+          <form name="lastForm" class="fourthForm">
+            <label class="form__label">Зарегистрируемся?</label>
+            <input
+              type="radio"
+              name="fourthName"
+              value="Я хочу зарегистрироваться"
+              class="form__input"
+            />
+            <span>Я хочу зарегистрироваться</span>
+            <br />
 
-						<input type="submit" name="fourthButton" value="Отправить" class="form__submit b-13" />
-						<p id="practicum13"></p>
-					</form>
-				</div>
-			</section>
+            <input
+              type="submit"
+              name="fourthButton"
+              value="Отправить"
+              class="form__submit b-13"
+            />
+            <p id="practicum13"></p>
+          </form>
+        </div>
+      </section>
 
-			<section>
-				<h4>Задание 1</h4>
-				<p>
-					Найдите все формы на странице. При нажатии на кнопку выведите количество найденных форм.
-				</p>
-				<p class="hint">
-					Подсказка: используйте коллекцию
-					<code>document.forms</code>
-					и свойство
-					<code>length</code>
-				</p>
-				<button class="button-primary b-1">Задание 1</button>
-				<p id="practicum"></p>
-			</section>
-			
-		</div>
+      <section>
+        <h4>Задание 1</h4>
+        <p>
+          Найдите все формы на странице. При нажатии на кнопку выведите
+          количество найденных форм.
+        </p>
+        <button class="button-primary b-1">Задание 1</button>
+        <p id="practicum"></p>
+      </section>
 
-		<script src="./week16.js"></script>
-	</body>
+      <section>
+        <h4>Задание 2</h4>
+        <p>
+          Найдите первую форму на странице. При нажатии на кнопку выведите
+          значение атрибута
+          <code>name</code>
+          этой формы.
+        </p>
+        <button class="button-primary b-2">Задание 2</button>
+        <div class="pr"><span id="practicum2"></span></div>
+      </section>
+    </div>
+
+    <script src="./week16.js"></script>
+  </body>
 </html>
