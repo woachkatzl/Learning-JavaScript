@@ -37,3 +37,18 @@ function makeThree() {
 }
 
 document.querySelector('.b-3').onclick = makeThree;
+
+//Задание 4
+//Найдите третью форму на странице, используя document.forms и имя формы (которое вы знаете из задания 3)
+//Выведите на страницу количество элементов в форме, используя коллекцию form.elements
+
+const paragraphFour = document.getElementById('practicum4');
+
+function makeFour() {
+	const formThreeElements = document.forms.formThree.elements;
+	const numberOfElements = formThreeElements.length;
+
+	paragraphFour.textContent = `Number of elements in form Three: ${numberOfElements}`
+}
+
+document.querySelector('.b-4').onclick = makeFour;
