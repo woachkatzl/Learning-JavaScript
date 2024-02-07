@@ -1,18 +1,18 @@
-//Задание 1
-//Найдите все формы на странице. При нажатии на кнопку выведите количество найденных форм.
+//Task 1
+//Find all the forms on the page. When pressing the button the number of pages should appear on the page.
 
 const paragraph = document.getElementById('practicum');
 
 function makeOne() {
 	const allForms = document.forms;
 	const numberOfForms = allForms.length;
-	paragraph.textContent = "Количество форм на странице: " + numberOfForms;
+	paragraph.textContent = "Number of forms on this page: " + numberOfForms;
 }
 
 document.querySelector('.b-1').onclick = makeOne;
 
-//Задание 2
-//Найдите первую форму на странице. При нажатии на кнопку выведите значение атрибута "name" этой формы.
+//Task 2
+//Find the first form on the page. Pressing the button should show the "name" attribute of this form.
 
 const paragraphTwo = document.getElementById('practicum2');
 
@@ -24,8 +24,8 @@ function makeTwo() {
 
 document.querySelector('.b-2').onclick = makeTwo;
 
-//Задание 3
-//Найдите все формы на странице и выведите их названия
+//Task 3
+//Find all the forms on the page and get their names
 
 const paragraphThree = document.getElementById('practicum3');
 
@@ -38,9 +38,9 @@ function makeThree() {
 
 document.querySelector('.b-3').onclick = makeThree;
 
-//Задание 4
-//Найдите третью форму на странице, используя document.forms и имя формы (которое вы знаете из задания 3)
-//Выведите на страницу количество элементов в форме, используя коллекцию form.elements
+//Task 4
+//Find the third form on the papge using document.forms and the form name.
+//Using form.elements collection find out the number of elements on the page and display them
 
 const paragraphFour = document.getElementById('practicum4');
 

@@ -12,14 +12,14 @@
 
   <body>
     <div class="container">
-      <h2><a>Практикум</a></h2>
-      <h1>Неделя 16. Формы</h1>
+      <h2><a>Practicum</a></h2>
+      <h1>Week 16. Forms</h1>
 
       <section class="formsAll">
         <div class="form">
-          <h2>Форма 1</h2>
+          <h2>Form 1</h2>
           <form name="formOne" class="firstForm">
-            <label for="firstName" class="form__label">Имя:</label>
+            <label for="firstName" class="form__label">Name:</label>
             <input
               type="text"
               id="firstName"
@@ -37,25 +37,27 @@
             />
             <br />
 
-            <label for="firstSelect" class="form__label">Выберите опцию:</label>
+            <label for="firstSelect" class="form__label"
+              >Chhose an option:</label
+            >
             <select id="firstSelect" name="firstSelect" class="form__select">
-              <option value="Опция 1">Опция 1</option>
-              <option value="Опция 2">Опция 2</option>
-              <option value="Опция 3">Опция 3</option>
+              <option value="Опция 1">Option 1</option>
+              <option value="Опция 2">Option 2</option>
+              <option value="Опция 3">Option 3</option>
             </select>
             <br />
 
             <button type="submit" name="firstButton" class="form__submit">
-              Отправить
+              Submit
             </button>
             <p class="error-message" id="errorMessage"></p>
           </form>
         </div>
 
         <div class="form">
-          <h2>Форма 2</h2>
+          <h2>Form 2</h2>
           <form name="formTwo" class="secondForm">
-            <label for="secondName" class="form__label">Имя:</label>
+            <label for="secondName" class="form__label">Name:</label>
             <input
               type="text"
               id="secondName"
@@ -73,7 +75,7 @@
             />
             <br />
 
-            <label class="form__label">Выберите варианты:</label>
+            <label class="form__label">Choose options:</label>
 
             <div class="flex">
               <input
@@ -82,7 +84,7 @@
                 name="checkboxOne"
                 class="form__checkbox"
               />
-              <label for="checkbox1">Вариант 1</label>
+              <label for="checkbox1">Option 1</label>
             </div>
 
             <div class="flex">
@@ -92,7 +94,7 @@
                 name="checkboxTwo"
                 class="form__checkbox"
               />
-              <label for="checkbox2">Вариант 2</label>
+              <label for="checkbox2">Option 2</label>
             </div>
 
             <div class="flex">
@@ -102,28 +104,28 @@
                 name="checkboxThree"
                 class="form__checkbox"
               />
-              <label for="checkbox3">Вариант 3</label>
+              <label for="checkbox3">Option 3</label>
             </div>
 
             <input
               name="secondButton"
               type="submit"
-              value="Отправить"
+              value="Submit"
               class="form__submit"
             />
           </form>
         </div>
 
         <div class="form">
-          <h2>Форма 3</h2>
+          <h2>Form 3</h2>
           <form name="formThree" class="thirdForm">
-            <label for="thirdName" class="form__label">Имя:</label>
+            <label for="thirdName" class="form__label">Name:</label>
             <input
               type="text"
               id="thirdName"
               name="thirdName"
               class="form__input"
-              placeholder="Ваше имя"
+              placeholder="Your name"
             />
             <br />
 
@@ -139,29 +141,29 @@
             <input
               type="submit"
               name="thirdButton"
-              value="Отправить"
+              value="Submit"
               class="form__submit"
             />
           </form>
         </div>
 
         <div class="form">
-          <h2>Форма 4</h2>
+          <h2>Form 4</h2>
           <form name="lastForm" class="fourthForm">
-            <label class="form__label">Зарегистрируемся?</label>
+            <label class="form__label">Sign up?</label>
             <input
               type="radio"
               name="fourthName"
-              value="Я хочу зарегистрироваться"
+              value="I want to sign up"
               class="form__input"
             />
-            <span>Я хочу зарегистрироваться</span>
+            <span>I want to sign up</span>
             <br />
 
             <input
               type="submit"
               name="fourthButton"
-              value="Отправить"
+              value="Submit"
               class="form__submit b-13"
             />
             <p id="practicum13"></p>
@@ -170,47 +172,46 @@
       </section>
 
       <section>
-        <h4>Задание 1</h4>
+        <h4>Task 1</h4>
         <p>
-          Найдите все формы на странице. При нажатии на кнопку выведите
-          количество найденных форм.
+          Find all the forms on the page. When pressing the button the number of
+          pages should appear on the page.
         </p>
-        <button class="button-primary b-1">Задание 1</button>
+        <button class="button-primary b-1">Task 1</button>
         <p id="practicum"></p>
       </section>
 
       <section>
-        <h4>Задание 2</h4>
+        <h4>Task 2</h4>
         <p>
-          Найдите первую форму на странице. При нажатии на кнопку выведите
-          значение атрибута
+          Find the first form on the page. Pressing the button should show the
           <code>name</code>
-          этой формы.
+          attribute of this form.
         </p>
-        <button class="button-primary b-2">Задание 2</button>
+        <button class="button-primary b-2">Task 2</button>
         <div class="pr"><span id="practicum2"></span></div>
       </section>
 
       <section>
-        <h4>Задание 3</h4>
+        <h4>Task 3</h4>
         <p>
-          Найдите все формы на странице и выведите их названия. При нажатии на
-          кнопку выведите названия всех найденных форм, разделённых запятыми.
+          Find all the forms on the page and get their names. When pressing the
+          button the form names should displayed separated by commas.
         </p>
-        <button class="button-primary b-3">Задание 3</button>
+        <button class="button-primary b-3">Task 3</button>
         <div class="pr"><span id="practicum3"></span></div>
       </section>
 
       <section>
-        <h4>Задание 4</h4>
+        <h4>Task 4</h4>
         <p>
-          Найдите третью форму на странице, используя
+          Find the third form on the papge using
           <code>document.forms</code>
-          и имя формы (которое вы знаете из задания 3). Выведите на страницу
-          количество элементов в форме, используя коллекцию
-          <code>form.elements</code>
+          and the form name. Using
+          <code>form.elements</code> collection find out the number of elements
+          on the page and display them.
         </p>
-        <button class="button-primary b-4">Задание 4</button>
+        <button class="button-primary b-4">Task 4</button>
         <div class="pr"><span id="practicum4"></span></div>
       </section>
     </div>
