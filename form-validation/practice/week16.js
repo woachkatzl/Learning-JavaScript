@@ -52,3 +52,18 @@ function makeFour() {
 }
 
 document.querySelector('.b-4').onclick = makeFour;
+
+//Task 5
+//List the names of all the elements in form 2.
+
+const paragraphFive = document.getElementById('practicum5');
+
+function makeFive() {
+
+	const allElements = document.forms.formTwo.elements;
+	const allElementsArray = [...allElements];
+	const elementNames = allElementsArray.map(element => element.getAttribute("name"));
+	paragraphFive.textContent = elementNames.join(", ");
+}
+
+document.querySelector('.b-5').onclick = makeFive;
