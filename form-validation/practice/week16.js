@@ -67,3 +67,16 @@ function makeFive() {
 }
 
 document.querySelector('.b-5').onclick = makeFive;
+
+//Task 6
+//Find and display the value of the radio button in form four
+
+const paragraphSix = document.getElementById('practicum6');
+
+function makeSix() {
+
+	const radioBtn = document.forms.lastForm.elements.fourthName;
+	paragraphSix.textContent = radioBtn.value;
+}
+
+document.querySelector('.b-6').onclick = makeSix;
