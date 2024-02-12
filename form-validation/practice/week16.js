@@ -80,3 +80,23 @@ function makeSix() {
 }
 
 document.querySelector('.b-6').onclick = makeSix;
+
+//Task 7
+//Find and display the id values of all the checkbox elements in form 2
+
+const paragraphSeven = document.getElementById('practicum7');
+
+function makeSeven() {
+
+	const elements = document.forms.formTwo.elements;
+	const checkboxElementsIds = [];
+	for (i = 0; i < elements.length; i++) {
+		if (elements[i].type === "checkbox") {
+			const id = elements[i].getAttribute("id");
+			checkboxElementsIds.push(id);
+		}
+	}
+	paragraphSeven.textContent = checkboxElementsIds.join(", ");
+}
+
+document.querySelector('.b-7').onclick = makeSeven;
