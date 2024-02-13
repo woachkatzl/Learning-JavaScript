@@ -100,3 +100,17 @@ function makeSeven() {
 }
 
 document.querySelector('.b-7').onclick = makeSeven;
+
+//Task 8
+//Check if the radio button in form four has been selected
+
+const paragraphEight = document.querySelector("#practicum8");
+
+function makeEight(e) {
+	e.preventDefault();
+	
+	const formFourRadio = document.forms.lastForm.elements.fourthName;
+	formFourRadio.checked ? paragraphEight.textContent = "Radio button is selected" : paragraphEight.textContent = "Radio button is not selected"
+}
+
+document.querySelector('.b-8').onclick = makeEight;
