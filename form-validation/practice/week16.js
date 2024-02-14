@@ -108,9 +108,21 @@ const paragraphEight = document.querySelector("#practicum8");
 
 function makeEight(e) {
 	e.preventDefault();
-	
+
 	const formFourRadio = document.forms.lastForm.elements.fourthName;
 	formFourRadio.checked ? paragraphEight.textContent = "Radio button is selected" : paragraphEight.textContent = "Radio button is not selected"
 }
 
 document.querySelector('.b-8').onclick = makeEight;
+
+//Task 9
+//check which option is selected in form one
+
+const paragraphNine = document.querySelector("#practicum9");
+
+function makeNine() {
+	const selectField = document.forms.formOne.elements.firstSelect;
+	paragraphNine.textContent = selectField.value;
+}
+
+document.querySelector('.b-9').onclick = makeNine;
