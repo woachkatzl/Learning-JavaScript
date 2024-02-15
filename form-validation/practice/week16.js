@@ -126,3 +126,14 @@ function makeNine() {
 }
 
 document.querySelector('.b-9').onclick = makeNine;
+
+//Task 10
+//Make option 3 in form one default
+
+function makeTen() {
+	//Ваш код
+	const select = document.forms.formOne.elements.firstSelect;
+	select.selectedIndex = 2;
+}
+
+makeTen();
