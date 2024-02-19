@@ -137,3 +137,23 @@ function makeTen() {
 }
 
 makeTen();
+
+//Task 11
+//Check if all the fields in form one are filled before submitting. There is an error element in Form one with id "errorMessage"
+//Clear all the fields after submission
+
+const formOne = document.forms.formOne;
+const formOneError = document.querySelector("#errorMessage");
+
+formOne.addEventListener('submit', function (event) {
+	event.preventDefault(); //Cancel submission
+
+	const elements = formOne.elements;
+	const [name, email, rest] = elements; //Saved the form fields as variables using destructuring and rest
+	if (!name.value || !email.value) {
+		formOneError.textContent = "Please fill out all the fields";
+	} else if (name.value && email.value) {
+		formOneError.textContent = "";
+		formOne.reset();
+	}
+});
