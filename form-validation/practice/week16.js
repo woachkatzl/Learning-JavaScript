@@ -157,3 +157,21 @@ formOne.addEventListener('submit', function (event) {
 		formOne.reset();
 	}
 });
+
+//Task 12
+//Add email field validation
+
+const errorMessage = document.getElementById('errorMessage');
+
+emailInput.oninput = function () {
+
+	const emailRegExp = /^[A-Z0-9._%+-]+@[A-Z0-9-]+\.+.[A-Z]{1,3}$/i;
+	const valid = emailRegExp.test(emailInput.value);
+	if (!valid) {
+		emailInput.style.borderColor = "red";
+		formOneError.textContent = "Неправильный формат email"; //error container saved as a variable in the previous task
+	} else if (valid) {
+		emailInput.style.borderColor = null;
+		formOneError.textContent = null;
+	}
+};
