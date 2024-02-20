@@ -161,7 +161,7 @@ formOne.addEventListener('submit', function (event) {
 //Task 12
 //Add email field validation
 
-const errorMessage = document.getElementById('errorMessage');
+const emailInput = document.forms.formOne.elements.firstEmail;
 
 emailInput.oninput = function () {
 
@@ -173,5 +173,29 @@ emailInput.oninput = function () {
 	} else if (valid) {
 		emailInput.style.borderColor = null;
 		formOneError.textContent = null;
+	}
+};
+
+//Task 13
+//When submitting the second at least one checkboxe should be checked. If none is checked cancel submission and display the error message in the element with "result13" id
+
+const formTwoBtn = document.forms.formTwo.elements.secondButton;
+
+formTwoBtn.onclick = function (event) {
+	event.preventDefault();
+	const checkboxes = document.forms.formTwo.querySelectorAll('input[type="checkbox"]');
+	let isChecked = false;
+
+	checkboxes.forEach(function (checkbox) {
+		if (checkbox.checked) {
+			isChecked = true;
+		}
+	});
+
+	if (!isChecked) {
+
+		document.getElementById('result13').textContent = 'Choose at least one option';
+	} else {
+		document.getElementById('result13').textContent = 'Success!';
 	}
 };
