@@ -199,3 +199,16 @@ formTwoBtn.onclick = function (event) {
 		document.getElementById('result13').textContent = 'Success!';
 	}
 };
+
+//Task 14
+//When choosing "I want to sign up" option in form four the submit button should be enabled. Otherwise make it disabled.
+
+const formFourBtn = document.forms.lastForm.elements.fourthButton;
+const formRadio = document.forms.lastForm.elements.fourthName;
+formFourBtn.disabled = true;
+
+formRadio.onchange = function () {
+	if (formRadio.checked) {
+		formFourBtn.disabled = false;
+	}
+}
