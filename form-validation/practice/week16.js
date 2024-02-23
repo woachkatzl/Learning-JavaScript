@@ -212,3 +212,11 @@ formRadio.onchange = function () {
 		formFourBtn.disabled = false;
 	}
 }
+
+//Task 15
+//Find all the input fields and set their placeholder attribute to "your infomation"
+
+document.querySelector('.b-15').onclick = function() {
+	const allFields = document.querySelectorAll('input');
+	allFields.forEach((field) => field.setAttribute("placeholder", "your information"))
+}
