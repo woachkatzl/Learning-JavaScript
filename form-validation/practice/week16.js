@@ -220,3 +220,20 @@ document.querySelector('.b-15').onclick = function() {
 	const allFields = document.querySelectorAll('input');
 	allFields.forEach((field) => field.setAttribute("placeholder", "your information"))
 }
+
+//Task 16
+//When focused on any of the input fields change its border color to "#00ff00". Return the default border when unfocused.
+
+document.querySelector('.b-16').onclick = function () {
+	const inputs = document.querySelectorAll('input');
+
+	inputs.forEach(function (input) {
+		input.addEventListener('focus', function () {
+			input.style.borderColor = "#00ff00";
+		});
+
+		input.addEventListener('blur', function () {
+			input.style.borderColor = null;
+		});
+	});
+};
