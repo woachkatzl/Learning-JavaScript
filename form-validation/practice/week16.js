@@ -237,3 +237,15 @@ document.querySelector('.b-16').onclick = function () {
 		});
 	});
 };
+
+//Task 17
+//When pressing the button "Task 17" the placeholder value from the name field in form three should be displayed in the element with "result17" id
+
+document.querySelector('.b-17').onclick = function (event) {
+	event.preventDefault();
+
+	const messageElem = document.querySelector("#result17");
+	const input = document.forms.formThree.elements.thirdName;
+
+	messageElem.textContent = input.placeholder;
+};
