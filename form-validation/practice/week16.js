@@ -249,3 +249,15 @@ document.querySelector('.b-17').onclick = function (event) {
 
 	messageElem.textContent = input.placeholder;
 };
+
+//Task 18
+//When there are any changes in one of the fields in form two display the message "input value changed" in the element with id "result18"
+
+const formTwoInputs = document.querySelectorAll('.secondForm input');
+
+formTwoInputs.forEach((input) => {
+	input.addEventListener('input', () => {
+		const message = document.querySelector("#result18");
+		message.textContent = "Input value changed";
+	});
+});
