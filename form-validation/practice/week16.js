@@ -261,3 +261,13 @@ formTwoInputs.forEach((input) => {
 		message.textContent = "Input value changed";
 	});
 });
+
+//Task 19
+//When an option is selected from the drop-down menu in form one display the message "Option selected" in the element with id "result19"
+
+const formOneSelect = document.getElementById('firstSelect');
+
+formOneSelect.addEventListener('change', function () {
+	const message = document.querySelector("#result19");
+	message.textContent = "Option selected";
+});
