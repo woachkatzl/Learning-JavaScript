@@ -23,7 +23,7 @@ const reverseSeq2 = length => Array.from({ length }, () => length--)
 // 2 --> 3 + 5 = 8
 // 3 --> 7 + 9 + 11 = 27
 
-//My solution 1
+//My solution
 function rowSumOddNumbers(n) {
     const arrayLength = n * (n + 1) / 2; //get the total number of odd numbers that would populate the triangle. We are given the number of triangle rows, each row contains as many numbers as the row number. So the length is the sum of all integers up to n.
 
@@ -37,4 +37,15 @@ function rowSumOddNumbers(n) {
 //Turns out the sum of numbers in any given row is that row number in cube n ** 3 -_-
 function rowSumOddNumbers1(n) {
     return n ** 3;
+}
+
+//3
+//Given an array of numbers return a new array where the first smallest number is removed. Do not mutate the original array.
+
+//Clever solution
+function removeSmallest(numbers) {
+    const smallestRate = Math.min(...numbers);
+    const indexToDelete = numbers.indexOf(smallestRate);
+
+    return [...numbers.slice(0, indexToDelete), ...numbers.slice(indexToDelete + 1)];
 }
