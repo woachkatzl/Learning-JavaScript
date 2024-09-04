@@ -1,4 +1,4 @@
-//1
+//1.
 //Write a function that would create an arrays of numbers in reverse order, starting with a provided number
 
 const reverseSeq = n => {
@@ -11,7 +11,7 @@ const reverseSeq2 = length => Array.from({ length }, () => length--)
 //If the variable for the provided number is named as a shorthand property, the syntax can be significantly simplified
 
 
-//2
+//2.
 //Given the triangle of consecutive odd numbers:
 //             1
 //          3     5
@@ -39,7 +39,7 @@ function rowSumOddNumbers1(n) {
     return n ** 3;
 }
 
-//3
+//3.
 //Given an array of numbers return a new array where the first smallest number is removed. Do not mutate the original array.
 
 //Clever solution
