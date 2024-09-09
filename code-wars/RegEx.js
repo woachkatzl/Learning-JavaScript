@@ -23,3 +23,16 @@ function printerError(s) {
     return `${s.length - s.match(/[a-m]/gi).length}/${s.length}`;
     //return `${s.match(/[n-z]/gi).length}/${s.length}`;
 }
+
+//4.
+//Given an array return the total number of smiling faces.
+//Rules for a smiling face:
+//1) Each smiley face must contain a valid pair of eyes. Eyes can be marked as : or ;
+//2) A smiley face can have a nose but it does not have to. Valid characters for a nose are - or ~
+//3) Every smiling face must have a smiling mouth that should be marked with either ) or D
+//e.g. countSmileys([';D', ':-(', ':-)', ';~)']);     // should return 3;
+
+function countSmileys(arr) {
+    const smilyesArr = arr.filter(el => /^[:;][~-]?[)D]$/.test(el))
+    return smilyesArr.length;
+}
