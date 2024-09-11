@@ -4,3 +4,30 @@
 function squareDigits(num) {
     return +num.toString().split('').map(d => d * d).join('');
 }
+
+//2.
+//Write a function that checks whether one array has all the "same" elements but squared. The function should work regardless of elements order and have the same number of occurances of each element. If either argument is null return false.
+//E.g. a = [121, 144, 19, 161, 19, 144, 19, 11]  
+//b = [121, 14641, 20736, 361, 25921, 361, 20736, 361] is same as [11*11, 121*121, 144*144, 19*19, 161*161, 19*19, 144*144, 19*19]
+
+//My solution
+function comp(array1, array2) {
+    if (!array1 || !array2)
+        return false;
+    if (array1.length !== array2.length)
+        return false;
+    for (let el of array1) {
+        const ind = array2.findIndex(num => num === el * el); //Check for array1 element in array2 and find its index
+        if (ind !== -1) array2.splice(ind, 1); //extract the found element from array2
+    }
+    return array2.length ? false : true; //If by the end of the loop array2 is empty, the check is thruthy
+}
+
+//Clever solution
+function comp1(array1, array2) {
+    if (array1 == null || array2 == null) return false;
+    if (array1.length !== array2.length)
+        array1.sort((a, b) => a - b);
+    array2.sort((a, b) => a - b);
+    return array1.map(v => v * v).every((v, i) => v == array2[i]);
+}
