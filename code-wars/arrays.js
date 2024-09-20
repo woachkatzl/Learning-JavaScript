@@ -31,3 +31,23 @@ function comp1(array1, array2) {
     array2.sort((a, b) => a - b);
     return array1.map(v => v * v).every((v, i) => v == array2[i]);
 }
+
+//3.
+//The main idea is to count all the occurring characters in a string. If you have a string like aba, then the result should be {'a': 2, 'b': 1}.
+
+//My solution
+function count(string) {
+    return string.split("").reduce((acc, v) => {
+        !acc[v] ? acc[v] = 1 : acc[v]++;
+        return acc;
+    }, {});
+}
+
+//Another solution
+function count1(string) {
+    var count = {};
+    string.split('').forEach(function (s) {
+        count[s] ? count[s]++ : count[s] = 1;
+    });
+    return count;
+}
